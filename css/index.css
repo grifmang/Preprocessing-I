@@ -182,7 +182,9 @@ section .work-history {
   flex-direction: column;
   justify-content: center;
   width: 45%;
+  height: 40%;
   margin: 2% 2%;
+  border: 1px solid black;
 }
 section .work-history ul {
   display: table;
@@ -227,7 +229,11 @@ section .work-history p {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
-.work {
+#work {
   flex-wrap: wrap;
   justify-content: space-between;
+}
+#skills {
+  margin: 3% 0;
+  justify-content: space-evenly;
 }

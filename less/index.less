@@ -66,6 +66,10 @@ html, body {
 	max-width: 100%;
 }
 
+.border(){
+	border: 1px solid black;
+}
+
 .main-img {
 	max-width: 100%;
 	
@@ -116,7 +120,9 @@ section {
 		flex-direction: column;
 		justify-content: center;
 		width: 45%;
+		height: 40%;
 		margin: 2% 2%;
+		.border();
 		
 		ul {
 			display: table;
@@ -129,7 +135,7 @@ section {
 
 	}
 
-}
+}// section close
 
 
 // CSS Rotation for the mail icon
@@ -170,10 +176,13 @@ section {
   }
 
 
-.work {
+#work {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
 }
 
-
+#skills {
+	margin: 3% 0;
+	justify-content: space-evenly;
+}
