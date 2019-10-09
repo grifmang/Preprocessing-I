@@ -3,8 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Griffith's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +16,114 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header> <!-- needs flex -->
+    <nav> <!-- needs flex -->
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="mailto:tim@timgriffith.us"><i class="fas fa-envelope-open-text fa-5x rotating"></i></a>
+  </header>
+
+  <section>
+    <div>
+      <p>
+        Hi there! I am passionate about programming and have been self-learning for about 5 years. I would love to find a position that utilizes my 10+ years of IT experience along with my new love for programming.
+      </p>
+    </div>
+  </section>
+
+  <div class="main-img">
+    <img src="images/glasses-code.jpg" alt="glasses with code image">
+  </div>
+
+  <section class="work">
+    <div class="work-history"> <!-- needs flex display column centered -->
+      <p>NEARI School - Holyoke, MA</p>
+      <p>December 2015 - August 2018</p>
+      <p>Senior System Administrator</p>
+      <div>
+          <ul>
+              <li>Automated tasks with Python scripts.</li>
+              <li>Managed Google Apps for Education environment.</li>
+              <li>Responsible for all web maintenance, upgrades, hosting.</li>
+              <li>Redesigned wireless network infrastructure using SonicWall and SonicPoint devices.</li>
+              <li>Technical Adviser for NEARI Press, where I was responsible for their website issues, as well as recording/supporting monthly webinars.</li>
+              <li>Responsible for purchasing/installation/maintenance of all technology. TV’s, network equipment, PCs, Macs, Chromebooks, Printers, etc across 3 campuses.</li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="work-history">
+      <p>Advanced IT Solutions - Springfield, MA | September 2011 - December 2018</p>
+      <p>Owner</p>
+      <div>
+          <ul>
+              <li>Concentration on virus cleaning, proactive safety.</li>
+              <li>Responsible for all support/house calls put into company.</li>
+              <li>LCD/LED screen replacements, mobile device screen replacements.</li>
+              <li>Designed and implemented AdvancedITSolutions.net. Also responsible for all maintenance, support and upgrades to website.</li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="work-history">
+      <p>Secure Energy Solutions - East Longmeadow, MA</p>
+      <p>August 2009 - September 2011</p>
+      <p>System Administrator</p>
+      <div>
+          <ul>
+              <li>Responsible for all technology based purchasing and receiving.</li>
+              <li>Responsible for building and maintaining Salesforce.com database.</li>
+              <li>Managed internal application development for commission application.</li>
+              <li>Provided 24x7 support for VoIP, LAN/WAN for main and remote offices.</li>
+              <li>Configured and set up remote office with VPN connectivity to main office.</li>
+              <li>Designed, tested, and configured corporate desktop computing environment.</li>
+              <li>Remote management of corporate desktops through the use of remote control software.</li>
+              <li>Managed corporate desktop computers with complete end-to-end life cycle management.</li>
+              <li>Managed daily help desk operations including troubleshooting and software installations.</li>
+              <li>Implemented network management solutions for efficient remote support across enterprise</li>
+              <li>Trained all staff on proper SOP for Salesforce.com, VoIP, Windows, Network, Shares, and Security.</li>
+              <li>Overall responsibility of network infrastructure environment including client side desktop support, network connectivity, network servers, and Help Desk support.</li> 
+              <li>Created and implemented the LAN/WAN, PC Support, email/website administration, Windows Servers, Active Directory, VoIP network, security system, IT Policies, and Help Desk Structure.</li> 
+            </ul>
+      </div>
+    </div>
+
+      <div class="work-history">
+        <p>Solutions by Computer - Springfield, MA</p>
+        <p>January 2007 - June 2008</p>
+        <p>Critical Support Analyst</p>
+        <div>
+            <ul>
+                <li>Supported VMware applications with UNIX, Windows and Linux servers.</li>
+                <li>Built domain environment, and Active Directory for Windows based domains.</li>
+                <li>Supported Cache database and wrote custom SQL scripts based on client needs.
+                <li>Worked hand in hand with the development staff to create the industry standard for rental software.</li>
+                <li>Their customers have a wide variety of setups ranging from strictly serial connections to all Ethernet based networks.</li>
+                <li>Setup and maintained lots of VPN’s, Remote Desktop, and supported some of their customers from remote login sites like LogMeIn/TeamViewer.</li>
+                <li>Traveled to customer sites for installations. Built LANs, setup servers, pin pads, printers, CC swipers, Barcode Scanners/Readers, Tape/Online backups, also built VPN’s for multi-site locations.</li>
+                <li>They have a Windows product (Enfinity), and a UNIX product (CounterPro), they also have vigorous beta testing for both products as well as providing support for all flavors of Operating Systems, and hardware.</li>
+              </ul>
+        </div>
+      </div>
+
+      <div class="work-history">
+        <p>Porter and Chester Institute - Rocky Hill, CT</p>
+        <p>August 2006 - December 2006</p>
+        <p>Instructor</p>
+        <div>
+            <ul>
+                <li>Maintained daily tape backups.</li>
+                <li>Maintained UNIX and Windows servers.</li>
+                <li>Supported Exchange, and Active Directory environment.</li>
+                <li>Provided support for faculty, and classroom network/machines.</li>
+                <li>Taught MCP (now known as MCDST), Security+, Network+, A+ course, and prepared students to pass certification exams.</li>
+              </ul>
+        </div>
+      </div>
+  </section>
 </body>
 </html>
