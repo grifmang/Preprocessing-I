@@ -84,8 +84,8 @@ html, body {
 
 header {
 	.flex-width();
-	height: 28%;
-	margin: 2% 0;
+	height: 14%;
+	margin: 2% 0 0 0;
 	justify-content: space-evenly;
 
 	nav {
@@ -104,16 +104,17 @@ header {
 section {
 	.flex-width();
 
+	@media (max-width: 500px) {
+		div {
+			height: 100%;
+		}
+	}
+
 	div {
 		.flex-width();
 		height: 15%;
 		justify-content: center;
 		align-items: center;
-	}
-
-	div p {
-		font-family: @righteous-font;
-		width: 30%;
 	}
 
 	.work-history {
@@ -123,10 +124,10 @@ section {
 		height: 40%;
 		margin: 2% 2%;
 		.border();
+		background: lightgrey;
 		
-		ul {
-			display: table;
-			margin: 0 auto;
+		.lists {
+			margin: 2%;
 		}
 	}
 
@@ -173,16 +174,57 @@ section {
 	-ms-animation: rotating 2s linear infinite;
 	-o-animation: rotating 2s linear infinite;
 	animation: rotating 2s linear infinite;
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
   }
 
 
 #work {
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	@media (max-width: 500px) {
+		.work-history {
+			width: 400px;
+			height: 300px;
+		}
+	}
 	
 }
 
 #skills {
 	margin: 3% 0;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	div {
+		display: flex;
+
+		i {
+			margin: 0 1%;
+		}
+	}
 }
+
+.intro {
+	height: 20%;
+	margin-top: 2%;
+
+	div {
+
+		p {
+			font-family: @righteous-font;
+			width: 50%;
+			font-size: 1.5rem;
+		}
+	}
+  }
+
+  footer {
+	  .flex-width();
+	  flex-direction: column;
+
+	  div {
+		  justify-content: space-evenly;
+	  }
+  }

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="#home">
     <nav> 
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
@@ -24,10 +24,10 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="mailto:tim@timgriffith.us"><i class="fas fa-envelope-open-text fa-5x rotating"></i></a>
+    <a href="mailto:tim@timgriffith.us"><i class="fas fa-envelope-open-text fa-4x rotating"></i></a>
   </header>
 
-  <section>
+  <section class="intro">
     <div>
       <p>
         Hi there! I am passionate about programming and have been self-learning for about 5 years. I would love to find a position that utilizes my 10+ years of IT experience along with my new love for programming.
@@ -40,26 +40,29 @@
   </div>
 
   <section id="skills">
-      <i class="fab fa-salesforce fa-5x"></i>
-      <i class="fab fa-windows fa-5x"></i>
-      <i class="fab fa-wordpress-simple fa-5x"></i>
-      <i class="fab fa-linux fa-5x"></i>
-      <i class="fab fa-less fa-5x"></i>
-      <i class="fab fa-python fa-5x"></i>
-      <i class="fab fa-github fa-5x"></i>
-      <i class="fab fa-git-square fa-5x"></i>
+      <div>
+        <i class="fab fa-salesforce fa-5x"></i>
+        <i class="fab fa-windows fa-5x"></i>
+        <i class="fab fa-wordpress-simple fa-5x"></i>
+        <i class="fab fa-linux fa-5x"></i>
+      </div>
+      <div>
+        <i class="fab fa-less fa-5x"></i>
+        <i class="fab fa-python fa-5x"></i>
+        <i class="fab fa-github fa-5x"></i>
+        <i class="fab fa-git-square fa-5x"></i>
+      </div>
   </section>
 
   <section id="work">
     <div class="work-history"> <!-- needs flex display column centered -->
       <p>NEARI School - Holyoke, MA | December 2015 - August 2018</p>
       <p>Senior System Administrator</p>
-      <div>
+      <div class="lists">
           <ul>
               <li>Automated tasks with Python scripts.</li>
-              <li>Managed Google Apps for Education environment.</li>
               <li>Responsible for all web maintenance, upgrades, hosting.</li>
-              <li>Redesigned wireless network infrastructure using SonicWall and SonicPoint devices.</li>
+              <li>Updated wireless network infrastructure using SonicWall and SonicPoint devices.</li>
               <li>Technical Adviser for NEARI Press, where I was responsible for their website issues, as well as recording/supporting monthly webinars.</li>
               <li>Responsible for purchasing/installation/maintenance of all technology. TV’s, network equipment, PCs, Macs, Chromebooks, Printers, etc across 3 campuses.</li>
             </ul>
@@ -69,7 +72,7 @@
     <div class="work-history">
       <p>Advanced IT Solutions - Springfield, MA | September 2011 - December 2018</p>
       <p>Owner</p>
-      <div>
+      <div class="lists">
           <ul>
               <li>Concentration on virus cleaning, proactive safety.</li>
               <li>Responsible for all support/house calls put into company.</li>
@@ -82,46 +85,35 @@
     <div class="work-history">
       <p>Secure Energy Solutions - East Longmeadow, MA | August 2009 - September 2011</p>
       <p>System Administrator</p>
-      <div>
+      <div class="lists">
           <ul>
               <li>Responsible for all technology based purchasing and receiving.</li>
               <li>Responsible for building and maintaining Salesforce.com database.</li>
               <li>Managed internal application development for commission application.</li>
               <li>Provided 24x7 support for VoIP, LAN/WAN for main and remote offices.</li>
               <li>Configured and set up remote office with VPN connectivity to main office.</li>
-              <li>Designed, tested, and configured corporate desktop computing environment.</li>
-              <li>Remote management of corporate desktops through the use of remote control software.</li>
-              <li>Managed corporate desktop computers with complete end-to-end life cycle management.</li>
-              <li>Managed daily help desk operations including troubleshooting and software installations.</li>
-              <li>Implemented network management solutions for efficient remote support across enterprise</li>
-              <li>Trained all staff on proper SOP for Salesforce.com, VoIP, Windows, Network, Shares, and Security.</li>
-              <li>Overall responsibility of network infrastructure environment including client side desktop support, network connectivity, network servers, and Help Desk support.</li> 
-              <li>Created and implemented the LAN/WAN, PC Support, email/website administration, Windows Servers, Active Directory, VoIP network, security system, IT Policies, and Help Desk Structure.</li> 
-            </ul>
+          </ul>
       </div>
     </div>
 
       <div class="work-history">
         <p>Solutions by Computer - Springfield, MA | January 2007 - June 2008</p>
         <p>Critical Support Analyst</p>
-        <div>
+        <div class="lists">
             <ul>
                 <li>Supported VMware applications with UNIX, Windows and Linux servers.</li>
                 <li>Built domain environment, and Active Directory for Windows based domains.</li>
                 <li>Supported Cache database and wrote custom SQL scripts based on client needs.
                 <li>Worked hand in hand with the development staff to create the industry standard for rental software.</li>
                 <li>Their customers have a wide variety of setups ranging from strictly serial connections to all Ethernet based networks.</li>
-                <li>Setup and maintained lots of VPN’s, Remote Desktop, and supported some of their customers from remote login sites like LogMeIn/TeamViewer.</li>
-                <li>Traveled to customer sites for installations. Built LANs, setup servers, pin pads, printers, CC swipers, Barcode Scanners/Readers, Tape/Online backups, also built VPN’s for multi-site locations.</li>
-                <li>They have a Windows product (Enfinity), and a UNIX product (CounterPro), they also have vigorous beta testing for both products as well as providing support for all flavors of Operating Systems, and hardware.</li>
-              </ul>
+                </ul>
         </div>
       </div>
 
       <div class="work-history">
         <p>Porter and Chester Institute - Rocky Hill, CT | August 2006 - December 2006</p>
         <p>Instructor</p>
-        <div>
+        <div class="lists">
             <ul>
                 <li>Maintained daily tape backups.</li>
                 <li>Maintained UNIX and Windows servers.</li>
@@ -132,5 +124,16 @@
         </div>
       </div>
   </section>
+
+  <footer id="#contact">
+    <div>
+      <a href="https://TimGriffith.us">View Full Resume</a>
+      <a href="https://github.com/grifmang">GitHub</a>
+      <a href="https://linkedin.com">LinkedIn</a>
+    </div>
+    <div>
+      <p>Tim Griffith 2019</p>
+    </div>
+  </footer>
 </body>
 </html>

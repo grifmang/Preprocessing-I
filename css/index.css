@@ -150,8 +150,8 @@ body {
 header {
   display: flex;
   max-width: 100%;
-  height: 28%;
-  margin: 2% 0;
+  height: 14%;
+  margin: 2% 0 0 0;
   justify-content: space-evenly;
 }
 header nav {
@@ -167,16 +167,17 @@ section {
   display: flex;
   max-width: 100%;
 }
+@media (max-width: 500px) {
+  section div {
+    height: 100%;
+  }
+}
 section div {
   display: flex;
   max-width: 100%;
   height: 15%;
   justify-content: center;
   align-items: center;
-}
-section div p {
-  font-family: 'Righteous', cursive;
-  width: 30%;
 }
 section .work-history {
   flex-direction: column;
@@ -185,10 +186,10 @@ section .work-history {
   height: 40%;
   margin: 2% 2%;
   border: 1px solid black;
+  background: lightgrey;
 }
-section .work-history ul {
-  display: table;
-  margin: 0 auto;
+section .work-history .lists {
+  margin: 2%;
 }
 section .work-history p {
   width: 80%;
@@ -228,12 +229,44 @@ section .work-history p {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
 }
 #work {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  #work .work-history {
+    width: 400px;
+    height: 300px;
+  }
+}
 #skills {
   margin: 3% 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#skills div {
+  display: flex;
+}
+#skills div i {
+  margin: 0 1%;
+}
+.intro {
+  height: 20%;
+  margin-top: 2%;
+}
+.intro div p {
+  font-family: 'Righteous', cursive;
+  width: 50%;
+  font-size: 1.5rem;
+}
+footer {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+}
+footer div {
   justify-content: space-evenly;
 }
